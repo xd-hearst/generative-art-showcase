@@ -9,9 +9,13 @@ import {
 } from 'remix';
 import type { MetaFunction } from 'remix';
 import styles from './tailwind.css';
+import galleryStyles from 'react-image-gallery/styles/css/image-gallery.css';
 
 export function links() {
-	return [{ rel: 'stylesheet', href: styles }];
+	return [
+		{ rel: 'stylesheet', href: styles },
+		{ rel: 'stylesheet', href: galleryStyles },
+	];
 }
 
 export const meta: MetaFunction = () => {
